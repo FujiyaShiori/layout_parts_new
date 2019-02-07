@@ -135,7 +135,9 @@
   line-height: 12px;
   box-sizing: border-box;
   background-color: #fff; 
+  outline: none;
   border: none;
+
 }
 
 .input_body:focus {
@@ -147,17 +149,30 @@
   border-radius: none;
   border: 0;
   font-size: 16px;
-  /* outline: none; */
-  /* -webkit-appearance: none;
+  outline: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; */
+  appearance: none;
 }
 
 .selected {
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 12px;
+  position: relative;
 }
+
+.selected:after {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
+}
+
 .input_selected {
   cursor: pointer;
   width: 100%;
@@ -165,9 +180,11 @@
   border-radius: 3px;
   font-size: 12px;
   background-color: #fff;
-  line-height: 12px;
+  line-height: 16px;
   box-sizing: border-box;
 }
+
+
 
 .required {
   color: #f00;
@@ -231,6 +248,7 @@
   box-sizing: border-box;
   resize: none;
   border: none;
+  outline: none;
   background-color: #fff;
 }
 .textbox:focus {
@@ -286,5 +304,10 @@
   cursor: pointer;
   line-height: 26px;
   border: none;
+}
+
+.submit_button:active {
+  background-color: #fff;
+  color: #00bcd4;
 }
 /* 回答はここに書いてね */
