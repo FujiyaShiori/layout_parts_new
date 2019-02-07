@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.text-align-text {
+.main-text {
   text-align: center;
-  margin: 0 auto;
+}
+.text-align-text {
+  display: inline-block;
+  text-align: center;
   padding: 10px 0;
   width: 90px;
   background-color: #e6f2ff;
