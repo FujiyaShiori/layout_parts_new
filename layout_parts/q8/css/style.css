@@ -1,5 +1,290 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.btn {
+  
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;  
+}
 
+.btn:first-child {
+  margin-left: 0;
+}
+
+.q8__btn__small {
+  line-height: 26px;
+  border-radius: 3px;
+  padding: 0 15px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.q8__btn__middle {
+  line-height: 32px;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.q8__btn__large {
+  line-height: 38px;
+  border-radius: 7px;
+  padding: 0 25px;
+  font-size: 24px;
+  display: inline-block;
+}
+.q8__btn__common {
+  background-color: #00bdd4;
+  color: #fff;
+}
+
+.q8__btn__error {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+.q8__btn__disabled {
+  background-color: #e5e5e5;
+  color: #fff;
+}
+
+.q8__btn__shadow {
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0,.12), 0px 1px 4px 1px rgba(0, 0, 0,.12);
+}
+
+
+
+
+/* ここからフォームCss */
+
+
+.q8_form {
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ecf1f2;
+}
+
+.q8_form_title {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.q8_form_title_letter {
+  text-align: left;
+  position: relative; 
+  top: 0;
+  left: 0;
+}
+.q8_form_title_letter::before {
+  content: "";
+  display: block;
+  border-top: solid 1px #ccc;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+.q8_form_title_letter span {
+  padding: 0 10px 0 0;
+  position: relative;
+  z-index: 5;
+  background-color: #ecf1f2;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.left {
+  float: left;
+  width: 300px;
+}
+
+
+.q8_left_title {
+  float: left;
+  text-align: right;
+  width: 100px;
+  line-height: 25px;
+}
+
+.left_contents {
+  margin-bottom: 20px;
+}
+.contents_in_left {
+  float: right;
+  width: 180px;
+}
+
+
+.input_body {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  background-color: #fff; 
+  border: none;
+}
+
+.input_body:focus {
+  box-shadow: 0 0 7px #00bcd4
+}
+.input_another {
+  padding: 0;
+  background-color: none;
+  border-radius: none;
+  border: 0;
+  font-size: 16px;
+  /* outline: none; */
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+}
+
+.selected {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+}
+.input_selected {
+  cursor: pointer;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  background-color: #fff;
+  line-height: 12px;
+  box-sizing: border-box;
+}
+
+.required {
+  color: #f00;
+}
+.clearfix {
+  margin-top: 20px;
+}
+.clearfix:first-child {
+  margin-top: 0;
+}
+
+.q8_radio {
+  cursor: pointer;
+}
+.radio_btn {
+  display: none;
+}
+.radio_btn_text {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.radio_btn_text::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: '';
+}
+.radio_btn:checked + .radio_btn_text::after {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content: '';
+}
+
+
+
+.right {
+  float: right;
+  width: 380px;
+}
+
+.textbox {
+  width: 100%;
+  height: 203px;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  background-color: #fff;
+}
+.textbox:focus {
+  box-shadow: 0 0 7px #00bcd4;
+}
+.q8_checkbox {
+  text-align: right;
+}
+
+.checkbox_btn {
+  display: none;
+}
+.checkbox_text {
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+}
+.checkbox_text:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: -9px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  content: '';
+}
+.checkbox_btn:checked + .checkbox_text::after {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transform: rotate(45deg);
+  content: '';
+}
+
+
+.q8_button {
+  text-align: right;
+}
+
+.submit_button {
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0 10px;
+  cursor: pointer;
+  line-height: 26px;
+  border: none;
+}
 /* 回答はここに書いてね */

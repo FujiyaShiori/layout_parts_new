@@ -1,5 +1,107 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.q7--float .q7__box {
+  font-size: 16px;
+  margin-left: 50px;
+  width: 225px;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.q7--float .q7__box:first-child{
+  margin-left: 0;
+}
+.q7--float .q7__inner {
+  width: 500px;
+  padding: 20px;
+  margin: auto;
+  background-color: #ecf1f2;
+}
 
+
+.q7--table .q7__inner {
+  display: table;
+  width: 500px;
+  margin: auto;
+  background-color: #ecf1f2;
+}
+
+.q7--table .q7__box {
+  display: table-cell;
+  padding-left: 50px;
+  vertical-align: middle;
+  width: 225px;
+  font-size: 16px;   
+}
+.q7--table .q7__box:first-child {
+  padding-left: 0;
+}
+
+.q7--inlineblock .q7__inner {
+  width: 500px;
+  margin: auto;
+  background-color: #ecf1f2;
+  font-size: 0;
+}
+
+.q7--inlineblock .q7__box {
+  display: inline-block;
+  margin-left: 50px;
+  vertical-align: middle;
+  width: 225px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #fff;
+}
+.q7--inlineblock .q7__box:first-child {
+  margin-left: 0;
+}
+
+
+.q7--flex .q7__inner {
+  width: 500px;
+  margin: auto;
+  background-color: #ecf1f2;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.q7--flex .q7__box {
+  margin-left: 50px;
+  width: 225px;
+  font-size: 16px;
+  padding: 10px;
+  vertical-align: middle;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.q7--flex .q7__box:first-child {
+  margin-left: 0;
+}
+
+
+.is-stable .q7__box__text {
+  display: inline-block;
+  width: 300px;
+
+}
+
+.is-flexible .q7__box__text {
+  display: inline-block;
+  width: 100%;
+  margin-left: -300px;
+  padding-left: 350px;
+  box-sizing: border-box;
+}
 /* 回答はここに書いてね */
