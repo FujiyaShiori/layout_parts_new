@@ -67,41 +67,39 @@
 
 
 .q7--flex .q7__inner {
-  width: 500px;
   margin: auto;
-  background-color: #ecf1f2;
-  padding: 20px;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
 }
 
 .q7--flex .q7__box {
-  margin-left: 50px;
-  width: 225px;
   font-size: 16px;
-  padding: 10px;
   vertical-align: middle;
-  background-color: #fff;
+  width: 225px;
   box-sizing: border-box;
 }
 
-.q7--flex .q7__box:first-child {
-  margin-left: 0;
+.q7__inner {
+  font-size: 0;
 }
 
-
-.is-stable .q7__box__text {
+.is-stable {
   display: inline-block;
   width: 300px;
-
+  box-sizing: border-box;
+  vertical-align: top;
+  font-size: 16px;
 }
 
-.is-flexible .q7__box__text {
+.is-flexible {
   display: inline-block;
-  width: 100%;
+  width: 99%;
   margin-left: -300px;
   padding-left: 350px;
   box-sizing: border-box;
+  vertical-align: top;
+  font-size: 16px;
+
 }
 /* 回答はここに書いてね */

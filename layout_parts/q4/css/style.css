@@ -4,48 +4,50 @@
 .q4 {
   margin: auto;
   background-color: #ecf1f2;
+  padding: 20px;
 }
 
-.q4_nav1, .q4_nav2 {
+.q4_nav {
   display: table;
   vertical-align:middle;
   text-align:center;
-  padding: 20px;
   box-sizing: border-box;
   width: 100%;
 }
 
-.q4_nav1 div, .q4_nav2 div {
+.main {
   display: table-cell;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
+.q4_nav:first-child {
+  margin-bottom: 20px;
+}
 
-.nav1_1 {
+.cluster_right {
   width: 100px;
   background-color: #fbc8b8;
 }
-.nav1_2 {
+.cluster_center {
   display: table-cell;
   background-color: #e0abd9;
 }
-.nav1_3 {
+.cluster_left {
   width: 100px;
   background-color: #b6d8ed;
 }
 
-.nav2_4 {
+.child_right {
   display: table-cell;
   background-color: #e5d32e;
 }
 
-.nav2_5 {
+.child_center {
   display: table-cell;
   background-color: #ec8f9a;
 }
 
-.nav2_6 {
+.child_left {
   width: 500px;
   background-color: #8fdcad;
 }

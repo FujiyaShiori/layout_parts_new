@@ -5,20 +5,25 @@
   margin: 0 auto;
   overflow: hidden;
   width: 500px;
-  height: 300px;
+  height: 330px;
   position: relative;
 }
-
+/* 
 .car_road  {
   display: block;
   transition: all 0.5s;
-}
-.car_road:hover {
+ } 
+/* .car_road:hover {
   transform: scale(1.5);
   transition: all 0.5s;
-}
-.picture:hover .car_contents {
+} */
+.picture:hover .car_contents{
   bottom: 0;
+}
+
+.picture:hover .car_road {
+  transform: scale(1.5);
+  transition: all 0.5s;
 }
 
 .car_contents {
